@@ -4,10 +4,12 @@ import pandas as pd
 import numpy as np
 import base64
 import joblib
+import os
 
 st.set_page_config(page_title="BSF_LARVAE!!!",page_icon=":bar_chart",layout="wide")
 # Load your pretrained model
-model = joblib.load('./rf_model.pkl')
+model_path = os.path.join("BSF_LARVAE", 'rf_model.pkl')
+model = joblib.load(model_path)
 
 #Create two columns, one for the image and one for the title
 header_col1, header_col2=st.columns([1,3])
