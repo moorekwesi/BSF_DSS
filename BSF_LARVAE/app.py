@@ -7,7 +7,7 @@ import joblib
 
 st.set_page_config(page_title="BSF_LARVAE!!!",page_icon=":bar_chart",layout="wide")
 # Load your pretrained model
-model = joblib.load('rf_model.pkl')
+model = joblib.load('./rf_model.pkl')
 
 #Create two columns, one for the image and one for the title
 header_col1, header_col2=st.columns([1,3])
