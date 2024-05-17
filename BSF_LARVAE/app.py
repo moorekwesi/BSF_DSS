@@ -14,8 +14,9 @@ model = joblib.load(model_path)
 #Create two columns, one for the image and one for the title
 header_col1, header_col2=st.columns([1,3])
 #Display the logo 
+image_path=os.path.join("BSF_LARVAE",'icipe.png')
 with header_col1:
-    st.image('icipe.png', width=200)
+    st.image(image_path, width=200)
 #display the title in the second column
 with header_col2:
     st.title('Fertilizer Production Prediction App')
